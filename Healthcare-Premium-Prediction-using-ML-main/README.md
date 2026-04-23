@@ -1,12 +1,14 @@
-# Healthcare-Premium-Prediction-using-ML
-Healthcare Premium Prediction ML project that estimates annual insurance cost based on demographic, medical, and lifestyle factors. Built using Scikit-learn with dual age-based models and deployed as an interactive Streamlit web app with professional UI and real-time prediction.
+# 💡 Healthcare Premium Prediction using Machine Learning
+
+Healthcare Premium Prediction ML project that estimates annual insurance cost based on demographic, medical, and lifestyle factors. Built using Scikit-learn with dual age-based models and deployed as an interactive Streamlit web app with a professional UI and real-time prediction.
 
 ---
 
 ## 📌 Project Overview
 
 Insurance premium pricing depends on multiple factors such as age, medical history, smoking habits, BMI category, employment type, income, and genetic risk.
-This project builds a predictive model to estimate the annual premium amount using supervised machine learning techniques.
+
+This project builds a predictive model to estimate the annual insurance premium using supervised machine learning techniques.
 
 ---
 
@@ -16,62 +18,62 @@ This project builds a predictive model to estimate the annual premium amount usi
 - Categorical feature encoding
 - Feature scaling using StandardScaler
 - Medical history risk transformation
-- Separate scaling for different age groups
+- Separate preprocessing for different age groups
 
 ### 🔹 Model Strategy
 Two separate models were trained:
 
-- **Young Model** → Age < 25
-- **Rest Model** → Age ≥ 25
+- **Young Model** → Age < 25  
+- **Rest Model** → Age ≥ 25  
 
-This improves generalization and prediction accuracy by capturing age-specific risk behavior.
+This improves accuracy by handling age-specific risk patterns.
 
-### 🔹 Artifacts Saved
+### 🔹 Saved Artifacts
 - `model_young.joblib`
 - `model_rest.joblib`
 - `scaler_young.joblib`
 - `scaler_rest.joblib`
 
-Each scaler stores:
-- The scaler object
-- Columns used for scaling
+Each scaler contains:
+- Scaler object
+- Feature columns used for training
 
 ---
 
 ## 🚀 Web Application (Streamlit)
 
-The project includes a fully interactive web application where users can:
+The project includes a fully interactive web app where users can:
 
-- Enter demographic details
-- Select smoking status
+- Enter personal and medical details
+- Select lifestyle and employment information
 - Choose insurance plan
-- Provide medical history
 - Get real-time premium prediction
 
 ### 🎨 UI Features
-- Premium gradient background
-- Highlighted premium output
-- Automatic model selection based on age
-- Fast loading using caching
+- Modern gradient background
+- Clean and responsive form layout
+- Highlighted prediction output
+- Fast inference using saved ML models
 
 ---
 
-## 📊 Features Used
+## 📊 Input Features
 
-- Age
-- Gender
-- Marital Status
-- Region
-- Number of Dependents
-- BMI Category
-- Smoking Status
-- Employment Status
-- Income (Lakhs)
-- Medical History
-- Insurance Plan
-- Genetic Risk Score
+- Age  
+- Gender  
+- Marital Status  
+- Region  
+- Number of Dependents  
+- BMI Category  
+- Smoking Status  
+- Employment Status  
+- Income (Lakhs)  
+- Medical History  
+- Insurance Plan  
+- Genetic Risk Score  
 
 ---
+   
 
 ## 🏗️ Project Structure
 
@@ -132,6 +134,6 @@ streamlit run main.py
 
 ## 👨‍💻 Author
 
-**Tanmay**  
+**khagesh**  
 Data Enthusiast
 
